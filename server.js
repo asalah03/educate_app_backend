@@ -1,5 +1,5 @@
 // ============================================
-// Educate Backend (Express + MongoDB)
+// Backend
 // ============================================
 
 require('dotenv').config();
@@ -29,7 +29,7 @@ app.use(cors(corsOptions));
 // Parse JSON request bodies (for POST / PUT)
 app.use(express.json());
 
-// Simple logger middleware 
+// logger middleware 
 // Logs every request method + URL to the console
 app.use((req, res, next) => {
   console.log(`[LOG] ${req.method} ${req.url}`);
