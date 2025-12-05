@@ -2,7 +2,7 @@
   {
     "subject": "Maths",
     "location": "London",
-    "price": 120,
+    "price": 170,
     "spaces": 5,
     "image": "images/maths.png"
   },
@@ -10,7 +10,7 @@
     "subject": "English",
     "location": "Manchester",
     "price": 100,
-    "spaces": 9,
+    "spaces": 8,
     "image": "images/english.png"
   },
   {

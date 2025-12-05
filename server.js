@@ -50,7 +50,7 @@ app.use('/images', (_req, res) => {
 });
 
 // --------------------------------------------
-// MongoDB Setup
+// The MongoDB Setup
 // --------------------------------------------
 
 const uri = process.env.MONGO_URI;
