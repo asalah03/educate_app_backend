@@ -22,9 +22,9 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-// --------------------------------------------
+// -----------
 // Middleware
-// --------------------------------------------
+// ------------
 
 // Parse JSON request bodies (for POST / PUT)
 app.use(express.json());
@@ -50,7 +50,7 @@ app.use('/images', (_req, res) => {
 });
 
 // --------------------------------------------
-// The MongoDB Setup
+// MongoDB 
 // --------------------------------------------
 
 const uri = process.env.MONGO_URI;
@@ -70,9 +70,9 @@ async function connectDB() {
   console.log(`Connected to MongoDB → Database: ${dbName}`);
 }
 
-// --------------------------------------------
+// ------------
 // API ROUTES
-// --------------------------------------------
+// ------------
 
 // GET all lessons (subject, location, price, spaces, image)
 app.get('/api/lessons', async (_req, res) => {
@@ -104,7 +104,7 @@ app.post('/api/order', async (req, res) => {
   }
 });
 
-// PUT update lesson spaces (identified by subject + location)
+// PUT update lesson spaces 
 app.put('/api/lessons', async (req, res) => {
   try {
     const { subject, location, spaces } = req.body;
@@ -133,7 +133,7 @@ app.put('/api/lessons', async (req, res) => {
 });
 
 // --------------------------------------------
-// Start server AFTER connecting to DB
+// Starts server AFTER connecting to DB
 // --------------------------------------------
 
 const port = process.env.PORT || 3000;
